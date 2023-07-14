@@ -207,4 +207,11 @@ body {
   background-position: left 4px;
   padding-left: 25px;
 }
+.rank__list {
+  list-style-type: decimal;
+  margin-left: 30px;
+}
+.rank__item {
+  margin-top: 0.5em;
+}
 /*# sourceMappingURL=style.css.map */

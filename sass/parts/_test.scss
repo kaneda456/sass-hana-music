@@ -37,8 +37,18 @@
 
 .rank {
   margin-top: 50px;
-  
+
   &__title {
     @include v.title-icon( url(../images/rank.png) );
   }
+
+  &__list {
+    list-style-type: decimal;
+    margin-left: 30px;
+  }
+
+  &__item {
+    margin-top: 0.5em;
+  }
 }
+
