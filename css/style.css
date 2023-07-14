@@ -198,6 +198,9 @@ body {
   margin-top: 1em;
 }
 
+.rank {
+  margin-top: 50px;
+}
 .rank__title {
   background-image: url(../images/rank.png);
   background-repeat: no-repeat;

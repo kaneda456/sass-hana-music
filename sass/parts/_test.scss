@@ -36,7 +36,8 @@
 }
 
 .rank {
-
+  margin-top: 50px;
+  
   &__title {
     @include v.title-icon( url(../images/rank.png) );
   }
