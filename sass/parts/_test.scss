@@ -25,4 +25,15 @@
 
 .profile {
   margin-top: 50px;
+
+  &__title {
+    @include v.title-icon( url(../images/profile.png) );//書き出したCSSから見てどこにいるのか
+  }
+}
+
+.rank {
+
+  &__title {
+    @include v.title-icon( url(../images/rank.png) );
+  }
 }

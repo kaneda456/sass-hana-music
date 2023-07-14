@@ -188,4 +188,17 @@ body {
 .profile {
   margin-top: 50px;
 }
+.profile__title {
+  background-image: url(../images/profile.png);
+  background-repeat: no-repeat;
+  background-position: left 4px;
+  padding-left: 25px;
+}
+
+.rank__title {
+  background-image: url(../images/rank.png);
+  background-repeat: no-repeat;
+  background-position: left 4px;
+  padding-left: 25px;
+}
 /*# sourceMappingURL=style.css.map */
