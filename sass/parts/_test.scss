@@ -2,7 +2,7 @@
 --artist
 ======================================================*/
 
-@use "variables as v"
+@use "variables as v";
 
 .artist {
   max-width: 860px;
@@ -10,4 +10,11 @@
   padding: 20px 30px;
   border-radius: 20px;
 
+  &__title {
+    background-color: v.$c-gray-1;
+    color:v.$c-yellow;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: v.rem(30);
+  }
 }
