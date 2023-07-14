@@ -29,6 +29,10 @@
   &__title {
     @include v.title-icon( url(../images/profile.png) );//書き出したCSSから見てどこにいるのか
   }
+
+  &__text {
+    margin-top: 1em;
+  }
 }
 
 .rank {
