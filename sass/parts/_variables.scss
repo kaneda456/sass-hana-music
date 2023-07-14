@@ -19,3 +19,11 @@ $pc: 769px;
     @content;
   }
 }
+
+// アイコン用
+@mixin title-icon($bgURL) {
+  background-image: $bgURL;
+  background-repeat: no-repeat;
+  background-position: left 4px;
+  padding-left: 25px;
+}
