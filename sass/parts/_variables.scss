@@ -1,0 +1,20 @@
+//変数準備
+$c-gray-1: #666;
+$c-gray-2: #ddd;
+$c-font: #333;
+$c-bg: #fafafa;
+$line: 5px double $c-font;
+
+//関数準備
+@function rem($px, $base: 16) {
+  @return $px / $base * 1rem;
+}
+
+//mediaquery
+$pc: 769px;
+
+@mixin pc {
+  @media (min-width: ($pc)) {
+    @content;
+  }
+}

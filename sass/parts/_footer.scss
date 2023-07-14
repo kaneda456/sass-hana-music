@@ -1,0 +1,29 @@
+/*======================================================
+--footer
+======================================================*/
+@use "variables"as v;
+
+.footer {
+  margin-top: v.rem(50);
+  padding: v.rem(40) 0 v.rem(20);
+  background-image: url(../images/line.png);
+  background-repeat: repeat-x;
+  text-align: center;
+}
+
+.sitemap {
+  &__list {
+    justify-content: center;
+    margin-bottom: v.rem(20);
+  }
+
+  &__item {
+
+    @include v.pc {
+      &+.sitemap__item {
+        margin-left: 2em;
+      }
+    }
+
+  }
+}

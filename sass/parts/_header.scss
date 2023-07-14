@@ -1,0 +1,65 @@
+/*======================================================
+--header
+======================================================*/
+@use "variables"as v;
+
+.header {
+  text-align: center;
+  padding: 20px 0;
+
+}
+
+/*========================
+  #gnaviの設定
+======================== */
+
+.gnavi {
+  text-align: center;
+  margin: 0 30px;
+
+  &__item {
+    position: relative;
+
+    @include v.pc {
+      flex: 1 1 100px;
+      border-left: v.$line;
+
+      &:last-child {
+        border-right: v.$line;
+      }
+    }
+
+  }
+
+  &__link {
+    display: block;
+    padding: 10px 0;
+
+    &:hover,
+    &.now {
+      background-color: #666;
+      color: #fff;
+      opacity: 1;
+    }
+  }
+}
+
+/*========================
+  .breadcrumbの設定
+======================== */
+
+.breadcrumb {
+  margin: 20px 0 0 30px;
+
+  &__list {
+    display: flex;
+  }
+
+  &__link {
+    text-decoration: underline;
+  }
+}
+
+.breadcrumb__item+.breadcrumb__item::before {
+  content: "＞";
+}

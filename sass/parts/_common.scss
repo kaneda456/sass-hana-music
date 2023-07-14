@@ -1,0 +1,66 @@
+@use "variables"as v;
+
+/*======================================================
+--共通設定
+======================================================*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+a {
+  color: v.$c-font;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+body {
+  color: v.$c-font;
+  font-family: 'Sawarabi Mincho', sans-serif;
+  font-weight: bold;
+  background-image: url(../images/bg.png);
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: v.$c-bg;
+}
+
+.flex {
+
+  @include v.pc {
+    display: flex;
+  }
+}
+
+.contents {
+  padding: v.rem(30);
+
+  @include v.pc {
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+}
+
+.pageTitle {
+  margin: v.rem(50) 0 0 v.rem(30);
+  padding-left: 0.5em;
+  border-left: v.$line;
+  font-size: v.rem(30);
+}
+

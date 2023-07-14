@@ -1,0 +1,30 @@
+/*======================================================
+--sidebar
+======================================================*/
+@use "variables" as v;
+.sidebar {
+  margin-top: v.rem(50);
+  padding: v.rem(30);
+  background-color: v.$c-gray-2;
+  border-radius: v.rem(20);
+
+  @include v.pc {
+    margin-top: 0;
+    flex: 0 0 250px;
+  }
+
+  &__title {
+    margin-bottom: v.rem(10);
+    border-bottom: v.$line;
+    text-align: center;
+  }
+  
+  &__list {
+    margin-left: 1.5em;
+    list-style-type: square;
+  }
+  
+  &__item {
+    margin-bottom: 0.5em;
+  }
+}
