@@ -28,7 +28,12 @@
 
   &__imgBox {
     text-align: center;
-  }
+
+    @include v.pc {
+      margin-right: 30px;
+      min-width: 300px;
+    }
+    }
 }
 
 .profile {
@@ -37,7 +42,7 @@
   @include v.pc {
     margin-top: 0;
   }
-  
+
   &__title {
     @include v.title-icon( url(../images/profile.png) );//書き出したCSSから見てどこにいるのか
   }

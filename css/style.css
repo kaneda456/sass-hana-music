@@ -190,6 +190,12 @@ body {
 .artist__imgBox {
   text-align: center;
 }
+@media (min-width: 769px) {
+  .artist__imgBox {
+    margin-right: 30px;
+    min-width: 300px;
+  }
+}
 
 .profile {
   margin-top: 50px;
