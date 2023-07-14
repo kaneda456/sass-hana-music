@@ -2,7 +2,7 @@
 --artist
 ======================================================*/
 
-@use "variables as v";
+@use "variables" as v;
 
 .artist {
   max-width: 860px;
@@ -16,5 +16,9 @@
     text-align: center;
     margin-bottom: 20px;
     font-size: v.rem(30);
+  }
+
+  &__imgBox {
+    text-align: center;
   }
 }

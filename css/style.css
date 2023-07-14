@@ -168,4 +168,20 @@ body {
 /*======================================================
 --artist
 ======================================================*/
+.artist {
+  max-width: 860px;
+  border: 5px double #333;
+  padding: 20px 30px;
+  border-radius: 20px;
+}
+.artist__title {
+  background-color: #666;
+  color: #ffd817;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.875rem;
+}
+.artist__imgBox {
+  text-align: center;
+}
 /*# sourceMappingURL=style.css.map */
